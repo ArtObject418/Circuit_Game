@@ -1,0 +1,185 @@
+[gd_scene load_steps=28 format=2]
+
+[ext_resource path="res://scripts/LevelSelect_1_12.gd" type="Script" id=1]
+[ext_resource path="res://textures/levels_buttons/able/12.png" type="Texture" id=2]
+[ext_resource path="res://textures/levels_buttons/able/11.png" type="Texture" id=3]
+[ext_resource path="res://textures/levels_buttons/able/10.png" type="Texture" id=4]
+[ext_resource path="res://textures/levels_buttons/able/09.png" type="Texture" id=5]
+[ext_resource path="res://textures/levels_buttons/able/07.png" type="Texture" id=6]
+[ext_resource path="res://textures/levels_buttons/unable/08.png" type="Texture" id=7]
+[ext_resource path="res://textures/levels_buttons/able/03.png" type="Texture" id=8]
+[ext_resource path="res://textures/levels_buttons/able/04.png" type="Texture" id=9]
+[ext_resource path="res://textures/levels_buttons/able/06.png" type="Texture" id=10]
+[ext_resource path="res://textures/levels_buttons/able/01.png" type="Texture" id=11]
+[ext_resource path="res://textures/levels_buttons/able/05.png" type="Texture" id=12]
+[ext_resource path="res://textures/levels_buttons/unable/09.png" type="Texture" id=13]
+[ext_resource path="res://textures/levels_buttons/unable/12.png" type="Texture" id=14]
+[ext_resource path="res://textures/levels_buttons/unable/11.png" type="Texture" id=15]
+[ext_resource path="res://textures/levels_buttons/unable/10.png" type="Texture" id=16]
+[ext_resource path="res://textures/levels_buttons/able/02.png" type="Texture" id=17]
+[ext_resource path="res://textures/levels_buttons/able/08.png" type="Texture" id=18]
+[ext_resource path="res://textures/levels_buttons/unable/06.png" type="Texture" id=19]
+[ext_resource path="res://textures/levels_buttons/unable/07.png" type="Texture" id=20]
+[ext_resource path="res://textures/levels_buttons/unable/04.png" type="Texture" id=21]
+[ext_resource path="res://textures/levels_buttons/unable/02.png" type="Texture" id=22]
+[ext_resource path="res://textures/levels_buttons/unable/05.png" type="Texture" id=23]
+[ext_resource path="res://textures/levels_buttons/unable/03.png" type="Texture" id=24]
+[ext_resource path="res://textures/levels_buttons/unable/01.png" type="Texture" id=25]
+[ext_resource path="res://textures/Other/Back_Button2.png" type="Texture" id=26]
+[ext_resource path="res://textures/Other/ФОН LVLS.png" type="Texture" id=27]
+
+[node name="LevelSelect_1_12" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 27 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+custom_constants/separation = 100
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 200.0
+margin_right = 1920.0
+margin_bottom = 360.0
+rect_pivot_offset = Vector2( 960, 80 )
+custom_constants/separation = 200
+alignment = 1
+
+[node name="Level_1" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
+margin_left = 340.0
+margin_right = 500.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 80, 80 )
+texture_normal = ExtResource( 11 )
+texture_disabled = ExtResource( 25 )
+
+[node name="Level_2" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
+margin_left = 700.0
+margin_right = 860.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 80, 80 )
+disabled = true
+texture_normal = ExtResource( 17 )
+texture_disabled = ExtResource( 22 )
+
+[node name="Level_3" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
+margin_left = 1060.0
+margin_right = 1220.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 80, 80 )
+disabled = true
+texture_normal = ExtResource( 8 )
+texture_disabled = ExtResource( 24 )
+
+[node name="Level_4" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
+margin_left = 1420.0
+margin_right = 1580.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 80, 80 )
+disabled = true
+texture_normal = ExtResource( 9 )
+texture_disabled = ExtResource( 21 )
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 460.0
+margin_right = 1920.0
+margin_bottom = 620.0
+rect_pivot_offset = Vector2( 960, 80 )
+custom_constants/separation = 200
+alignment = 1
+
+[node name="Level_5" type="TextureButton" parent="VBoxContainer/HBoxContainer2"]
+margin_left = 340.0
+margin_right = 500.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 80, 80 )
+disabled = true
+texture_normal = ExtResource( 12 )
+texture_disabled = ExtResource( 23 )
+
+[node name="Level_6" type="TextureButton" parent="VBoxContainer/HBoxContainer2"]
+margin_left = 700.0
+margin_right = 860.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 80, 80 )
+disabled = true
+texture_normal = ExtResource( 10 )
+texture_disabled = ExtResource( 19 )
+
+[node name="Level_7" type="TextureButton" parent="VBoxContainer/HBoxContainer2"]
+margin_left = 1060.0
+margin_right = 1220.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 80, 80 )
+disabled = true
+texture_normal = ExtResource( 6 )
+texture_disabled = ExtResource( 20 )
+
+[node name="Level_8" type="TextureButton" parent="VBoxContainer/HBoxContainer2"]
+margin_left = 1420.0
+margin_right = 1580.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 80, 80 )
+disabled = true
+texture_normal = ExtResource( 18 )
+texture_disabled = ExtResource( 7 )
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 720.0
+margin_right = 1920.0
+margin_bottom = 880.0
+rect_pivot_offset = Vector2( 960, 80 )
+custom_constants/separation = 200
+alignment = 1
+
+[node name="Level_9" type="TextureButton" parent="VBoxContainer/HBoxContainer3"]
+margin_left = 340.0
+margin_right = 500.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 80, 80 )
+disabled = true
+texture_normal = ExtResource( 5 )
+texture_disabled = ExtResource( 13 )
+
+[node name="Level_10" type="TextureButton" parent="VBoxContainer/HBoxContainer3"]
+margin_left = 700.0
+margin_right = 860.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 80, 80 )
+disabled = true
+texture_normal = ExtResource( 4 )
+texture_disabled = ExtResource( 16 )
+
+[node name="Level_11" type="TextureButton" parent="VBoxContainer/HBoxContainer3"]
+margin_left = 1060.0
+margin_right = 1220.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 80, 80 )
+disabled = true
+texture_normal = ExtResource( 3 )
+texture_disabled = ExtResource( 15 )
+
+[node name="Level_12" type="TextureButton" parent="VBoxContainer/HBoxContainer3"]
+margin_left = 1420.0
+margin_right = 1580.0
+margin_bottom = 160.0
+rect_pivot_offset = Vector2( 80, 80 )
+disabled = true
+texture_normal = ExtResource( 2 )
+texture_disabled = ExtResource( 14 )
+
+[node name="BackButton" type="TextureButton" parent="."]
+margin_left = 99.0
+margin_top = 62.0
+margin_right = 139.0
+margin_bottom = 102.0
+texture_normal = ExtResource( 26 )
+
+[connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
